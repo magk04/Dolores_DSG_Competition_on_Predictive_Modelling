@@ -12,25 +12,25 @@ The Random Forest Regressor is used along with some feature mean normalisations 
 
 # 4. Imports Required
 Following Imports were made to make the predictions :
-• Imported Numpy as np for the Linear Algebra operations.
-• Imported Pandas as pd for the data processing operations.
-• Imported matplotlib.pyplot as plt for Plotting certain plots for visualisation.
-• Imported train_test_split and mean_squared_error from sklearn for cross validation.
-• Imported RandomForestRegressor from sklearn for regression of the model.
+## • Imported Numpy as np for the Linear Algebra operations.
+## • Imported Pandas as pd for the data processing operations.
+## • Imported matplotlib.pyplot as plt for Plotting certain plots for visualisation.
+## • Imported train_test_split and mean_squared_error from sklearn for cross validation.
+## • Imported RandomForestRegressor from sklearn for regression of the model.
 
 # 5. Coding Summary
 Python3 in Notebook was used to code the predictive model as follows :
-• Two data frames df and df1 were formed storing train and test data respectively.
-• Mean normalisation was done on some features such as tau1, tau2, tau3 etc.
-• Visualisations and Inferences were drawn by plotting several plots using matplotlib.
-• Unwanted set columns (‘target’, ‘id’ and ‘Unnamed: 0’ ) and ( ‘id’ and ‘Unnamed: 0’ ) were dropped from data frames df and df1 respectively.
-• Training data was split in train and test samples as the fraction of test size as 0.3 and random state as 42.
-• Shapes of x_train and y_train were checked and found to be same.
-• Random forest Regressor was applied on the train data and used to predict test data splitted from the training data.
-• The root mean square error was then calculated and which was found to be around 0.52.
-• The model was then used to predict the test data provided.
-• Submission Data Frame was then made having the features same as in the sample_submission.csv file.
-• The final csv file was then submitted in the competition.
+### • Two data frames df and df1 were formed storing train and test data respectively.
+### • Mean normalisation was done on some features such as tau1, tau2, tau3 etc.
+### • Visualisations and Inferences were drawn by plotting several plots using matplotlib.
+### • Unwanted set columns (‘target’, ‘id’ and ‘Unnamed: 0’ ) and ( ‘id’ and ‘Unnamed: 0’ ) were dropped from data frames df and df1 respectively.
+### • Training data was split in train and test samples as the fraction of test size as 0.3 and random state as 42.
+### • Shapes of x_train and y_train were checked and found to be same.
+### • Random forest Regressor was applied on the train data and used to predict test data splitted from the training data.
+### • The root mean square error was then calculated and which was found to be around 0.52.
+### • The model was then used to predict the test data provided.
+### • Submission Data Frame was then made having the features same as in the sample_submission.csv file.
+### • The final csv file was then submitted in the competition.
 
 # 6. Mean Normalisation
 Mean normalization was done to change the values of some columns such as tau1, tau2 etc. in the dataset to use a common scale around -2 to +2, without distorting differences in the ranges of values or losing information.
